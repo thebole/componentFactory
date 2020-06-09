@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<h2>Append or Prepend HTML to div</h2>
+
+<!-- Variable Template que va a factorizar el componente que es llamado -->
+<div class="row" #appenHere></div>
+
+<div>
+    <button class="btn btn-success" (click)="addNewComponent()">Append</button>
+</div>
+<div>
+  <button class="btn btn-primary" (click)="callingTwoComponent()">Calling 2</button>
+</div>
+<div>
+  <button class="btn btn-danger" (click)="removeComponent()">Remove</button>
+</div>
+
+<router-outlet></router-outlet>
